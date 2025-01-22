@@ -3,14 +3,14 @@
 
 **Teaching Assistant:** Julia Wilkins
 
-Welcome to Machine Listening! In this repository you'll find the assignment Jupyter notebooks and any supplemental material you might need to get started on the course assignments. 
+Welcome to Machine Listening! In this repository you'll find the assignment Jupyter notebooks and any supplemental material you might need to get started on the course assignments. Note that the notebooks will only be visible here at the time of assignment release.
 
 Steps to completing and turning in your assignments: 
 
-1. Download the necessary folder from this repository (e.g. "assignment-1"). 
+1. Download the necessary notebook from this repository (e.g. `assignment1.ipynb`). 
 2. Run the Jupyter notebook for the assignment locally (guide below) and complete the code and written questions.
 3. Make sure your full notebook is **evaluated**.
-4. Submit **only** the evaluated `.ipynb` file to [Gradescope](https://www.gradescope.com/courses/953045).
+4. Submit the evaluated `.ipynb` file to [Gradescope](https://www.gradescope.com/courses/953045).
 
 ----
 
@@ -29,7 +29,7 @@ Disclaimer: there are *many* ways to get up and running with Jupyter Notebook an
 - Check if you have anaconda installed already: `conda --version`
     - → If yes: check if you can already run jupyter notebook: `jupyter notebook`
         - → If yes, you can skip this whole tutorial! (unless you want tips on running notebooks using specific conda environment as jupyter kernels)
-    - → If no: ****yay, you’re in the right place. Follow this tutorial!
+    - → If no: yay, you’re in the right place. Follow this tutorial!
 
 ### Installing Jupyter Notebook with Anaconda
 
@@ -38,16 +38,18 @@ Disclaimer: there are *many* ways to get up and running with Jupyter Notebook an
 2. In the CLI: create a new conda environment with Python 3.9: `conda create -n MLenv python=3.9`
 3. Activate this environment: `conda activate MLenv`
 4. Install ipykernel for conda: `conda install ipykernel`
+5. Install nb_conda_kernels for conda: `conda install nb_conda_kernels`
 5. Install some base packages for Python that will be useful for this class in this environment using `pip`** (i.e. with `conda activate MLenv` activated):
     
     ```bash
+    pip install notebook
     pip install matplotlib
     pip install librosa
     pip install scipy
     pip install scikit-learn
     ```
     
-6. In a new tab (in the base environment, not `MLenv`): run `jupyter notebook`. This should automatically launch a jupyter notebook in your browser, hosted locally.
+6. Run `jupyter notebook` in your conda environment. This should automatically launch a jupyter notebook in your browser, hosted locally.
 7. Under the `kernel` dropdown menu in the Jupyter UI, select `Change kernel`. You should see the option to select your new conda environment here, something like `Python [conda env:MLenv]` . Now you can use the packages installed in your conda environment. 
 8. When you need to install more packages in this environment, you can go back to the CLI, activate your conda environment, and `pip` install them. You will have to restart your kernel after this to be able to import the new packages!
 
