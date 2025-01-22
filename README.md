@@ -38,19 +38,19 @@ Disclaimer: there are *many* ways to get up and running with Jupyter Notebook an
 2. In the CLI: create a new conda environment with Python 3.9: `conda create -n MLenv python=3.9`
 3. Activate this environment: `conda activate MLenv`
 4. Install ipykernel for conda: `conda install ipykernel`
-5. Install nb_conda_kernels for conda: `conda install nb_conda_kernels`
-5. Install some base packages for Python that will be useful for this class in this environment using `pip`** (i.e. with `conda activate MLenv` activated):
+5. Install ipykernel for conda: `conda install notebook`
+6. Install nb_conda_kernels for conda: `conda install nb_conda_kernels`
+7. Install some base packages for Python that will be useful for this class in this environment using `pip`** (i.e. with `conda activate MLenv` activated):
     
     ```bash
-    pip install notebook
     pip install matplotlib
     pip install librosa
     pip install scipy
     pip install scikit-learn
     ```
     
-6. Run `jupyter notebook` in your conda environment. This should automatically launch a jupyter notebook in your browser, hosted locally.
-7. Under the `kernel` dropdown menu in the Jupyter UI, select `Change kernel`. You should see the option to select your new conda environment here, something like `Python [conda env:MLenv]` . Now you can use the packages installed in your conda environment. 
+8. Run `jupyter notebook` in your conda environment. This should automatically launch a jupyter notebook in your browser, hosted locally.
+9. Under the `kernel` dropdown menu in the Jupyter UI, select `Change kernel`. You should see the option to select your new conda environment here, something like `Python [conda env:MLenv]` . Now you can use the packages installed in your conda environment. 
 8. When you need to install more packages in this environment, you can go back to the CLI, activate your conda environment, and `pip` install them. You will have to restart your kernel after this to be able to import the new packages!
 
 **✅🎉 Congrats! You should now have a working Jupyter notebook setup that you can use for class assignments.✅🎉**
