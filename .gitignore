@@ -1,3 +1,6 @@
+#local files
+ESC-50-master/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
